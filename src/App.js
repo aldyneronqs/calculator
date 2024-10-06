@@ -77,7 +77,7 @@ function App() {
       case '-':
         result = n1 - n2;
         break;
-      case '×':
+      case '*':
         result = n1 * n2;
         break;
       case '÷':
@@ -86,6 +86,7 @@ function App() {
       default:
         return;
     }
+    
     setDisp(result);
     setNum1(null);
     setNum2(null);
@@ -115,7 +116,7 @@ function App() {
           <Key label={4} clickHandler={numClickHandler} />
           <Key label={5} clickHandler={numClickHandler} />
           <Key label={6} clickHandler={numClickHandler} />
-          <Key label={'×'} clickHandler={opClickHandler} className="OperatorButton" />
+          <Key label={'*'} clickHandler={opClickHandler} className="OperatorButton" />
           <Key label={1} clickHandler={numClickHandler} />
           <Key label={2} clickHandler={numClickHandler} />
           <Key label={3} clickHandler={numClickHandler} />
